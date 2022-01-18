@@ -1,10 +1,14 @@
 import './App.scss';
+import {Routes , Route} from 'react-router-dom';
 import React from 'react';
+import Test1 from './components/Test1'
+import Test2 from './components/Test2';
 function App() {
     return ( 
-        <div className="App">
-            <p className="text-center">Aanish</p>
-        </div>
+       <Routes>
+           <Route path="/" element={<Test1/>}/>
+           <Route path="/test" element={<Test2/>}/>
+       </Routes>
      );
 }
 
